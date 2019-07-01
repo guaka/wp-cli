@@ -420,6 +420,15 @@ class WP_CLI {
 	 * WP_CLI::add_command( 'foo', $foo );
 	 * ```
 	 *
+	 * If you want to add commands to your local wp-cli setup you can add this to your
+	 * `~/.wp-cli/config.yml`:
+	 * ```
+	 * require:
+ 	 *   my-wp-code.php
+	 * ```
+	 * Consequently you can put the above php code in your `~/.wp-cli/my-wp-code.php`.
+	 *
+	 *
 	 * @access public
 	 * @category Registration
 	 *
